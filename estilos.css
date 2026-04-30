@@ -1,0 +1,152 @@
+/* PAGINA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("SEBADA.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background: #6D4C41;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background: #3E2723;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 15px;
+}
+
+nav ul li a {
+    color: #F1F8E9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #AED581;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+section {
+    flex: 3;
+    background: #FFF8E1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+aside {
+    flex: 1;
+    background: #E8F5E9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.imagenes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.imagenes img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video iframe,
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #558B2F;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #33691E;
+}
+
+footer {
+    background: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
